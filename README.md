@@ -1,0 +1,2 @@
+# movie_rental
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b7918ada74cd41898cb59bdafe089df7)](https://app.codacy.com/manual/sibalnirbhay/movie_rental?utm_source=github.com&utm_medium=referral&utm_content=sibalnirbhay/movie_rental&utm_campaign=Badge_Grade_Settings)
