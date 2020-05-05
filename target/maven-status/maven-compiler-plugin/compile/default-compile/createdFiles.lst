@@ -1,3 +1,3 @@
-Movie.class
-Customer.class
-Rental.class
+classes/Customer.class
+classes/Rental.class
+classes/Movie.class

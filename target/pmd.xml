@@ -2,26 +2,10 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2020-05-05T03:35:35.825">
-<file name="/Users/nirbhay.sibal/IdeaProjects/movie_rental/src/main/java/Customer.java">
-<violation beginline="4" endline="72" begincolumn="1" endcolumn="1" rule="NoPackage" ruleset="Code Style" class="Customer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#nopackage" priority="3">
-All classes, interfaces, enums and annotations must belong to a named package
-</violation>
-<violation beginline="6" endline="6" begincolumn="13" endcolumn="18" rule="LooseCoupling" ruleset="Best Practices" class="Customer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+    version="6.21.0" timestamp="2020-05-05T04:08:38.363">
+<file name="/Users/nirbhay.sibal/IdeaProjects/movie_rental/src/main/java/classes/Customer.java">
+<violation beginline="8" endline="8" begincolumn="13" endcolumn="18" rule="LooseCoupling" ruleset="Best Practices" package="classes" class="Customer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
 Avoid using implementation types like 'Vector'; use the interface instead
-</violation>
-<violation beginline="33" endline="49" begincolumn="13" endcolumn="13" rule="SwitchStmtsShouldHaveDefault" ruleset="Best Practices" class="Customer" method="statement" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#switchstmtsshouldhavedefault" priority="3">
-Switch statements should have a default label
-</violation>
-</file>
-<file name="/Users/nirbhay.sibal/IdeaProjects/movie_rental/src/main/java/Movie.java">
-<violation beginline="1" endline="26" begincolumn="1" endcolumn="1" rule="NoPackage" ruleset="Code Style" class="Movie" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#nopackage" priority="3">
-All classes, interfaces, enums and annotations must belong to a named package
-</violation>
-</file>
-<file name="/Users/nirbhay.sibal/IdeaProjects/movie_rental/src/main/java/Rental.java">
-<violation beginline="1" endline="17" begincolumn="1" endcolumn="1" rule="NoPackage" ruleset="Code Style" class="Rental" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#nopackage" priority="3">
-All classes, interfaces, enums and annotations must belong to a named package
 </violation>
 </file>
 </pmd>

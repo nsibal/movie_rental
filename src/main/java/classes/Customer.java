@@ -1,3 +1,5 @@
+package classes;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -21,7 +23,7 @@ public class Customer {
     
         double      totalAmount          = 0;
         int         frequentRenterPoints = 0;
-        Enumeration rentals              = _rentals.elements();
+        Enumeration<Rental> rentals              = _rentals.elements();
         String      result               = "Rental Record for " + getName() + "\n";
         
         while (rentals.hasMoreElements()) {
@@ -45,6 +47,9 @@ public class Customer {
                     if (each.getDaysRented() > 3) {
                         thisAmount += (each.getDaysRented() - 3) * 1.5;
                     }
+                    break;
+                default:
+                    System.out.println("Bad Rental Type");
                     break;
             }
             
