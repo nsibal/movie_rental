@@ -1,4 +1,4 @@
-package classes;
+package me.sibalnirbhay.classes;
 
 public class Rental {
     private Movie _movie;

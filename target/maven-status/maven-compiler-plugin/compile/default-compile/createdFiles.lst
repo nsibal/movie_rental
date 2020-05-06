@@ -1,3 +1,4 @@
-classes/Customer.class
-classes/Rental.class
-classes/Movie.class
+me/sibalnirbhay/classes/Rental.class
+me/sibalnirbhay/classes/Customer.class
+me/sibalnirbhay/Main.class
+me/sibalnirbhay/classes/Movie.class
