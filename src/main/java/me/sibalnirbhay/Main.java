@@ -1,6 +1,8 @@
 package me.sibalnirbhay;
 
-import me.sibalnirbhay.classes.*;
+import me.sibalnirbhay.classes.Customer;
+import me.sibalnirbhay.classes.Movie;
+import me.sibalnirbhay.classes.Rental;
 
 public final class Main {
 

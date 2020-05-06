@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2020-05-06T07:34:49.081">
+    version="6.21.0" timestamp="2020-05-06T07:40:59.063">
 <file name="/Users/nirbhay.sibal/IdeaProjects/movie_rental/src/main/java/me/sibalnirbhay/classes/Customer.java">
 <violation beginline="8" endline="8" begincolumn="13" endcolumn="18" rule="LooseCoupling" ruleset="Best Practices" package="me.sibalnirbhay.classes" class="Customer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
 Avoid using implementation types like 'Vector'; use the interface instead
