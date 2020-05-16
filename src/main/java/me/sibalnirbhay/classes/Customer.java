@@ -69,15 +69,19 @@ public class Customer {
                            "\t" + String.valueOf(thisAmount) + "\n";
             totalAmount += thisAmount;
         }
-        
-        // add footer lines
-        result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
-        result += "You earned " + String.valueOf(frequentRenterPoints) +
-                  " frequent renter points";
+
+        result += footer(totalAmount, frequentRenterPoints);
         return result;
     }
 
     private String header(String name) {
         return "Rental Record for " + name + "\n";
+    }
+
+    private String footer(double totalAmount, int frequentRenterPoints) {
+        String footer1 = "Amount owed is " + String.valueOf(totalAmount) + "\n";
+        String footer2 = "You earned " + String.valueOf(frequentRenterPoints) +
+                         " frequent renter points";
+        return footer1 + footer2;
     }
 }
