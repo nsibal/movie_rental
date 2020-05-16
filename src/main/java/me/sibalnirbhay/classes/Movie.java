@@ -7,19 +7,19 @@ public class Movie {
     public static final int CHILDREN    = 2;
     
     private String _title;
-    private int    _priceCode;
+    private Price  _price;
     
     public Movie(String title, int priceCode) {
         _title     = title;
-        _priceCode = priceCode;
+        _price     = new Price(priceCode);
     }
     
     public int getPriceCode() {
-        return _priceCode;
+        return _price.priceCode();
     }
     
-    public void setPriceCode(int arg) {
-        _priceCode = arg;
+    public void setPriceCode(int priceCode) {
+        _price = new Price(priceCode);
     }
     
     public String getTitle() {
