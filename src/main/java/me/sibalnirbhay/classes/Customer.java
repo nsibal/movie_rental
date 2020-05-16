@@ -28,13 +28,12 @@ public class Customer {
             double thisAmount = each.amountFor();
 
             // show figures for this rental
-            result      += "\t" + each.getMovie().getTitle() +
-                           "\t" + String.valueOf(thisAmount) + "\n";
+            result += "\t" + each.getMovie().getTitle() +
+                      "\t" + String.valueOf(thisAmount) + "\n";
         }
 
-        double totalAmount = totalAmount(this.myRentals);
-
-        int frequentRenterPoints = frequentRenterPoints(this.myRentals);
+        double totalAmount          = totalAmount(this.myRentals);
+        int    frequentRenterPoints = frequentRenterPoints(this.myRentals);
 
         result += footer(totalAmount, frequentRenterPoints);
         return result;

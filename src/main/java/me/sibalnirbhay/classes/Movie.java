@@ -10,8 +10,12 @@ public class Movie {
     private Price  _price;
     
     public Movie(String title, int priceCode) {
+        this(title, new Price(priceCode));
+    }
+
+    public Movie(String title, Price price) {
         _title = title;
-        _price = new Price(priceCode);
+        _price = price;
     }
     
     public int getPriceCode() {
