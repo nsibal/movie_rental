@@ -12,9 +12,9 @@ public final class Main {
     Customer tony = new Customer("Tony");
     Customer peter = new Customer("Peter");
 
-    Movie avengers = new Movie("The Avengers", 0);
-    Movie endgame = new Movie("Endgame", 1);
-    Movie homeComing = new Movie("Home Coming", 2);
+    Movie avengers = new Movie("The Avengers", Movie.REGULAR);
+    Movie endgame = new Movie("Endgame", Movie.NEW_RELEASE);
+    Movie homeComing = new Movie("Home Coming", Movie.CHILDRENS);
 
     tony.addRental(new Rental(avengers, 9));
     tony.addRental(new Rental(endgame, 15));
