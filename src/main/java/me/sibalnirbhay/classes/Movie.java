@@ -10,8 +10,8 @@ public class Movie {
     private Price  _price;
     
     public Movie(String title, int priceCode) {
-        _title     = title;
-        _price     = new Price(priceCode);
+        _title = title;
+        _price = new Price(priceCode);
     }
     
     public int getPriceCode() {
@@ -27,31 +27,6 @@ public class Movie {
     }
 
     public double amount(int daysRented) {
-        return amount(_price, daysRented);
-    }
-
-    private double amount(Price price, int daysRented) {
-        double thisAmount = 0;
-        switch (price.priceCode()) {
-            case REGULAR:
-                thisAmount += 2;
-                if (daysRented > 2) {
-                    thisAmount += (daysRented - 2) * 1.5;
-                }
-                break;
-            case NEW_RELEASE:
-                thisAmount += daysRented * 3;
-                break;
-            case CHILDREN:
-                thisAmount += 1.5;
-                if (daysRented > 3) {
-                    thisAmount += (daysRented - 3) * 1.5;
-                }
-                break;
-            default:
-                System.out.println("Bad Rental Type");
-                break;
-        }
-        return thisAmount;
+        return _price.amount(daysRented);
     }
 }
