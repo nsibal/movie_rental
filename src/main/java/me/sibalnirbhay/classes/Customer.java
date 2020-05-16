@@ -20,49 +20,63 @@ public class Customer {
     }
     
     public String statement() {
-    
-        double totalAmount = 0;
-        String name        = getName();
-        String result      = header(name);
 
-      for (Rental each : myRentals) {
-            double thisAmount = 0;
-            
-            // determine amounts for each line
-            switch (each.getMovie().getPriceCode()) {
-                case Movie.REGULAR:
-                    thisAmount += 2;
-                    if (each.getDaysRented() > 2) {
-                        thisAmount += (each.getDaysRented() - 2) * 1.5;
-                    }
-                    break;
-                case Movie.NEW_RELEASE:
-                    thisAmount += each.getDaysRented() * 3;
-                    break;
-                case Movie.CHILDREN:
-                    thisAmount += 1.5;
-                    if (each.getDaysRented() > 3) {
-                        thisAmount += (each.getDaysRented() - 3) * 1.5;
-                    }
-                    break;
-                default:
-                    System.out.println("Bad Rental Type");
-                    break;
-            }
-            
+        String name   = getName();
+        String result = header(name);
+
+        for (Rental each : myRentals) {
+            double thisAmount = amountFor(each);
+
             // show figures for this rental
             result      += "\t" + each.getMovie().getTitle() +
                            "\t" + String.valueOf(thisAmount) + "\n";
-            totalAmount += thisAmount;
         }
+        
+        double totalAmount = totalAmount(this.myRentals);
 
-        int frequentRenterPoints = FrequentRenterPoints(this.myRentals);
+        int frequentRenterPoints = frequentRenterPoints(this.myRentals);
 
         result += footer(totalAmount, frequentRenterPoints);
         return result;
     }
 
-    private int FrequentRenterPoints(List<Rental> rentals) {
+    private double totalAmount(Iterable<Rental> rentals) {
+        double totalAmount = 0;
+        for (Rental each : rentals) {
+            double thisAmount = amountFor(each);
+            totalAmount += thisAmount;
+        }
+        return totalAmount;
+    }
+
+    private double amountFor(Rental rental) {
+        double thisAmount = 0;
+
+        // determine amounts for each line
+        switch (rental.getMovie().getPriceCode()) {
+            case Movie.REGULAR:
+                thisAmount += 2;
+                if (rental.getDaysRented() > 2) {
+                    thisAmount += (rental.getDaysRented() - 2) * 1.5;
+                }
+                break;
+            case Movie.NEW_RELEASE:
+                thisAmount += rental.getDaysRented() * 3;
+                break;
+            case Movie.CHILDREN:
+                thisAmount += 1.5;
+                if (rental.getDaysRented() > 3) {
+                    thisAmount += (rental.getDaysRented() - 3) * 1.5;
+                }
+                break;
+            default:
+                System.out.println("Bad Rental Type");
+                break;
+        }
+        return thisAmount;
+    }
+
+    private int frequentRenterPoints(List<Rental> rentals) {
         int frequentRenterPoints = 0;
         for (Rental each : rentals) {
             frequentRenterPoints++;
