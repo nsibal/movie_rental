@@ -27,8 +27,12 @@ public class Movie {
     }
 
     public double amount(int daysRented) {
+        return amount(_price, daysRented);
+    }
+
+    private double amount(Price price, int daysRented) {
         double thisAmount = 0;
-        switch (getPriceCode()) {
+        switch (price.priceCode()) {
             case REGULAR:
                 thisAmount += 2;
                 if (daysRented > 2) {
