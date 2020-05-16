@@ -21,11 +21,9 @@ public class Customer {
     
     public String statement() {
     
-        double totalAmount          = 0;
-        int    frequentRenterPoints = 0;
-
-        String name   = getName();
-        String result = header(name);
+        double totalAmount = 0;
+        String name        = getName();
+        String result      = header(name);
 
       for (Rental each : myRentals) {
             double thisAmount = 0;
@@ -58,19 +56,21 @@ public class Customer {
             totalAmount += thisAmount;
         }
 
-        frequentRenterPoints = 0;
-        for (Rental each : myRentals) {
-            frequentRenterPoints++;
-
-            // add bonus for a two day new release rental
-            if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE &&
-                    each.getDaysRented() > 1) {
-                frequentRenterPoints++;
-            }
-        }
+        int frequentRenterPoints = FrequentRenterPoints(this.myRentals);
 
         result += footer(totalAmount, frequentRenterPoints);
         return result;
+    }
+
+    private int FrequentRenterPoints(List<Rental> rentals) {
+        int frequentRenterPoints = 0;
+        for (Rental each : rentals) {
+            frequentRenterPoints++;
+            if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE && each.getDaysRented() > 1) {
+                frequentRenterPoints++;
+            }
+        }
+        return frequentRenterPoints;
     }
 
     private String header(String name) {
