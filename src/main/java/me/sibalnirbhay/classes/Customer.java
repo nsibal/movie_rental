@@ -24,7 +24,9 @@ public class Customer {
         double              totalAmount          = 0;
         int                 frequentRenterPoints = 0;
         Enumeration<Rental> rentals              = _rentals.elements();
-        String              result               = "Rental Record for " + getName() + "\n";
+
+        String name   = getName();
+        String result = header(name);
         
         while (rentals.hasMoreElements()) {
             
@@ -73,5 +75,9 @@ public class Customer {
         result += "You earned " + String.valueOf(frequentRenterPoints) +
                   " frequent renter points";
         return result;
+    }
+
+    private String header(String name) {
+        return "Rental Record for " + name + "\n";
     }
 }
