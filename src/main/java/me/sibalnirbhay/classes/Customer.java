@@ -1,18 +1,18 @@
 package me.sibalnirbhay.classes;
 
-import java.util.Enumeration;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
     private String _name;
-    private Vector _rentals = new Vector();
+    private List<Rental> myRentals = new ArrayList<Rental>();
     
     public Customer (String name) {
         _name = name;
     }
     
-    public void addRental(Rental arg) {
-        _rentals.addElement(arg);
+    public void addRental(Rental rental) {
+        myRentals.add(rental);
     }
     
     public String getName() {
@@ -21,17 +21,14 @@ public class Customer {
     
     public String statement() {
     
-        double              totalAmount          = 0;
-        int                 frequentRenterPoints = 0;
-        Enumeration<Rental> rentals              = _rentals.elements();
+        double totalAmount          = 0;
+        int    frequentRenterPoints = 0;
 
         String name   = getName();
         String result = header(name);
-        
-        while (rentals.hasMoreElements()) {
-            
+
+      for (Rental each : myRentals) {
             double thisAmount = 0;
-            Rental each       = (Rental) rentals.nextElement();
             
             // determine amounts for each line
             switch (each.getMovie().getPriceCode()) {
