@@ -12,7 +12,7 @@ public class CustomerTest {
 
     customer.addRental(new Rental(new Movie("The Avengers", Movie.REGULAR), 9));
     customer.addRental(new Rental(new Movie("Endgame", Movie.NEW_RELEASE), 15));
-    customer.addRental(new Rental(new Movie("Home Coming", Movie.CHILDRENS), 12));
+    customer.addRental(new Rental(new Movie("Home Coming", Movie.CHILDREN), 12));
 
     String expected_output = "Rental Record for Bob\n" +
             "\tThe Avengers\t12.5\n" +

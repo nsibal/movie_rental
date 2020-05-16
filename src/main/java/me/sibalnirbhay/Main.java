@@ -14,7 +14,7 @@ public final class Main {
 
     Movie avengers = new Movie("The Avengers", Movie.REGULAR);
     Movie endgame = new Movie("Endgame", Movie.NEW_RELEASE);
-    Movie homeComing = new Movie("Home Coming", Movie.CHILDRENS);
+    Movie homeComing = new Movie("Home Coming", Movie.CHILDREN);
 
     tony.addRental(new Rental(avengers, 9));
     tony.addRental(new Rental(endgame, 15));
