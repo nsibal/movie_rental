@@ -18,10 +18,7 @@ public class Rental {
     }
 
     public double amountFor() {
-        int daysRented = getDaysRented();
-        Movie movie = getMovie();
-
-        return movie.amount(daysRented);
+        return getMovie().amount(getDaysRented());
     }
 
 }
