@@ -26,7 +26,7 @@ public class Customer {
         for (Rental each : myRentals) {
             double thisAmount = each.amountFor();
             result += "\t" + each.getMovie().getTitle() +
-                      "\t" + String.valueOf(thisAmount) + "\n";
+                      "\t" + thisAmount + "\n";
         }
 
         double totalAmount          = totalAmount(this.myRentals);
@@ -58,8 +58,8 @@ public class Customer {
     }
 
     private String footer(double totalAmount, int frequentRenterPoints) {
-        String footer1 = "Amount owed is " + String.valueOf(totalAmount) + "\n";
-        String footer2 = "You earned " + String.valueOf(frequentRenterPoints) +
+        String footer1 = "Amount owed is " + totalAmount + "\n";
+        String footer2 = "You earned " + frequentRenterPoints +
                          " frequent renter points";
         return footer1 + footer2;
     }
