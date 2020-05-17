@@ -1,5 +1,8 @@
 package me.sibalnirbhay.classes;
 
+import me.sibalnirbhay.price.ChildrenPrice;
+import me.sibalnirbhay.price.NewReleasePrice;
+import me.sibalnirbhay.price.RegularPrice;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

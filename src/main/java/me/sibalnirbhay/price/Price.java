@@ -1,10 +1,8 @@
-package me.sibalnirbhay.abstractClasses;
+package me.sibalnirbhay.price;
 
 public abstract class Price {
-    private int _priceCode;
 
     public Price(int priceCode) {
-        _priceCode = priceCode;
     }
 
     public abstract double amount(int daysRented);

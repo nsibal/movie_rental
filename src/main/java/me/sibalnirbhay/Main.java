@@ -1,6 +1,9 @@
 package me.sibalnirbhay;
 
 import me.sibalnirbhay.classes.*;
+import me.sibalnirbhay.price.ChildrenPrice;
+import me.sibalnirbhay.price.NewReleasePrice;
+import me.sibalnirbhay.price.RegularPrice;
 
 public final class Main {
 

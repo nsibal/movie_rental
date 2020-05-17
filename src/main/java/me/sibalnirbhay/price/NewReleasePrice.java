@@ -1,6 +1,6 @@
-package me.sibalnirbhay.classes;
+package me.sibalnirbhay.price;
 
-import me.sibalnirbhay.abstractClasses.Price;
+import me.sibalnirbhay.classes.Movie;
 
 public class NewReleasePrice extends Price {
     public NewReleasePrice() {

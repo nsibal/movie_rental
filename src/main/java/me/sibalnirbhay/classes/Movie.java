@@ -1,6 +1,6 @@
 package me.sibalnirbhay.classes;
 
-import me.sibalnirbhay.abstractClasses.Price;
+import me.sibalnirbhay.price.Price;
 
 public class Movie {
     public static final int REGULAR     = 0;
