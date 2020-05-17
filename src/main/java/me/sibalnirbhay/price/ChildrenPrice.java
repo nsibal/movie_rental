@@ -1,10 +1,6 @@
 package me.sibalnirbhay.price;
 
 public class ChildrenPrice extends Price {
-	public ChildrenPrice() {
-		super();
-	}
-
 	public double amount(int daysRented) {
 		double thisAmount = 1.5;
 		if (daysRented > 3) {

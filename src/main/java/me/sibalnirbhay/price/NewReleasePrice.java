@@ -1,10 +1,6 @@
 package me.sibalnirbhay.price;
 
 public class NewReleasePrice extends Price {
-    public NewReleasePrice() {
-        super();
-    }
-
     public double amount(int daysRented) {
         return daysRented * 3;
     }
