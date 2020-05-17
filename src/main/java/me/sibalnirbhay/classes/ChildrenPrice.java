@@ -1,5 +1,7 @@
 package me.sibalnirbhay.classes;
 
+import me.sibalnirbhay.abstractClasses.Price;
+
 public class ChildrenPrice extends Price {
 	public ChildrenPrice() {
 		super(Movie.CHILDREN);

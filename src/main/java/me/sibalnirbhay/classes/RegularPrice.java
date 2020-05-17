@@ -1,5 +1,7 @@
 package me.sibalnirbhay.classes;
 
+import me.sibalnirbhay.abstractClasses.Price;
+
 public class RegularPrice extends Price {
     public RegularPrice() {
         super(Movie.REGULAR);

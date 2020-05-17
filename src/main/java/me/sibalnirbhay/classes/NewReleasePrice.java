@@ -1,5 +1,7 @@
 package me.sibalnirbhay.classes;
 
+import me.sibalnirbhay.abstractClasses.Price;
+
 public class NewReleasePrice extends Price {
     public NewReleasePrice() {
         super(Movie.NEW_RELEASE);

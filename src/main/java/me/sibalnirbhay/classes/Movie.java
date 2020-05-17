@@ -1,5 +1,7 @@
 package me.sibalnirbhay.classes;
 
+import me.sibalnirbhay.abstractClasses.Price;
+
 public class Movie {
     public static final int REGULAR     = 0;
     public static final int NEW_RELEASE = 1;
