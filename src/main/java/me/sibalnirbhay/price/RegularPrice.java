@@ -1,10 +1,8 @@
 package me.sibalnirbhay.price;
 
-import me.sibalnirbhay.classes.Movie;
-
 public class RegularPrice extends Price {
     public RegularPrice() {
-        super(Movie.REGULAR);
+        super();
     }
 
     public double amount(int daysRented) {

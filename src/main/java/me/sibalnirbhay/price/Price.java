@@ -2,7 +2,7 @@ package me.sibalnirbhay.price;
 
 public abstract class Price {
 
-    public Price(int priceCode) {
+    public Price() {
     }
 
     public abstract double amount(int daysRented);

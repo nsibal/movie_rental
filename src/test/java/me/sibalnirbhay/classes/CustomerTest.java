@@ -5,7 +5,7 @@ import me.sibalnirbhay.price.NewReleasePrice;
 import me.sibalnirbhay.price.RegularPrice;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CustomerTest {
     @Test
