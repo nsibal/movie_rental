@@ -20,4 +20,9 @@ public class Rental {
     public double amountFor() {
         return getMovie().amount(getDaysRented());
     }
+
+    public int renterPoints(int daysRented) {
+        return getMovie().renterPoints(daysRented);
+    }
+
 }

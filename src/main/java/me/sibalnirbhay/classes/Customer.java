@@ -46,14 +46,11 @@ public class Customer {
     }
 
     private int frequentRenterPoints(List<Rental> rentals) {
-        int frequentRenterPoints = 0;
+        int totalRenterPoints = 0;
         for (Rental each : rentals) {
-            frequentRenterPoints++;
-            if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE && each.getDaysRented() > 1) {
-                frequentRenterPoints++;
-            }
+            totalRenterPoints += each.renterPoints(each.getDaysRented());
         }
-        return frequentRenterPoints;
+        return totalRenterPoints;
     }
 
     private String header(String name) {

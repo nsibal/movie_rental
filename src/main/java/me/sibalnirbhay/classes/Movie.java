@@ -17,10 +17,6 @@ public class Movie {
         return _price.priceCode();
     }
     
-//    public void setPriceCode(int priceCode) {
-//        _price = new Price(priceCode);
-//    }
-    
     public String getTitle() {
         return _title;
     }
@@ -28,4 +24,9 @@ public class Movie {
     public double amount(int daysRented) {
         return _price.amount(daysRented);
     }
+
+    public int renterPoints(int daysRented) {
+        return _price.renterPoints(daysRented);
+    }
+
 }
