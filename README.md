@@ -4,9 +4,9 @@ This project has been created to demonstrate application of Software Engineering
 - This repo uses the Movie Rental code, found in the first chapter of the 1<sup>st</sup> edition of [Refactoring: Improving the Design of Existing Code](https://martinfowler.com/books/refactoring.html), as the base code, and demos the aforementioned principles on that.
 - This book can also be downloaded for free from [this GitHub public repo](https://github.com/petyakostova/IT-Books/blob/master/Programming/Refactoring%20Improving%20the%20Design%20of%20Existing%20Code%20-%20Martin%20Fowler%2C%20Kent%20Beck%2C%20John%20Brant%2C%20William%20Opdyke%2C%20Don%20Roberts.pdf)*.
 - I came across this code while I was enrolled in [Dr. Tien N. Nguyen](https://personal.utdallas.edu/%7Etien.n.nguyen/index.html)'s [CS6359 - Object Oriented Analysis and Design](https://coursebook.utdallas.edu/search/now/cs6359) at [The University of Texas at Dallas](http://cs.utdallas.edu) in Spring 2020, while pursuing my Master of Science in Computer Science.
-- I have incorporated Apache Maven in this project.
-- I will try to write as much tests as possible.
-- I have incorporated [Codacy](https://github.com/marketplace/codacy) for code quality check.
+- Apache Maven has been incorporated  in this project.
+- [Codacy](https://github.com/marketplace/codacy) has also been integrated for code quality check.
+- There are some tests that can be found [here](https://github.com/sibalnirbhay/movie_rental/tree/master/src/test/java).
 ---
 
 ## Badges
