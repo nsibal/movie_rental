@@ -6,28 +6,25 @@ import java.util.List;
 public class Customer {
     private String       _name;
     private List<Rental> myRentals = new ArrayList<Rental>();
-    
+
     public Customer (String name) {
         _name = name;
     }
-    
+
     public void addRental(Rental rental) {
         myRentals.add(rental);
     }
-    
+
     public String getName() {
         return _name;
     }
-    
-    public String statement() {
 
+    public String statement() {
         String name   = getName();
         String result = header(name);
 
         for (Rental each : myRentals) {
             double thisAmount = each.amountFor();
-
-            // show figures for this rental
             result += "\t" + each.getMovie().getTitle() +
                       "\t" + String.valueOf(thisAmount) + "\n";
         }
