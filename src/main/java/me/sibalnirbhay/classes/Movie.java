@@ -17,9 +17,9 @@ public class Movie {
         return _price.priceCode();
     }
     
-    public void setPriceCode(int priceCode) {
-        _price = new Price(priceCode);
-    }
+//    public void setPriceCode(int priceCode) {
+//        _price = new Price(priceCode);
+//    }
     
     public String getTitle() {
         return _title;

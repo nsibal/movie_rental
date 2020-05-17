@@ -6,6 +6,6 @@ public class NewReleasePrice extends Price {
     }
 
     public double amount(int daysRented) {
-        return daysRented * 3;
+        return (double) (daysRented * 3);
     }
 }
