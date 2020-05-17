@@ -7,10 +7,6 @@ public abstract class Price {
         _priceCode = priceCode;
     }
 
-    public int priceCode() {
-        return _priceCode;
-    }
-
     abstract double amount(int daysRented);
 
     public int renterPoints(int daysRented) {
